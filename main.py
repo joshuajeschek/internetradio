@@ -102,16 +102,5 @@ if __name__ == '__main__':
   try:
     server.serve_forever()
   except KeyboardInterrupt:
-    pass
-
-  server.server_close()
-  print('Stopped server')
-
-  # while True:
-  #   url = 'http://av.rasset.ie/av/live/radio/radio1.m3u'
-  #   radio = Radio()
-  #   time.sleep(60)
-  #   radio.play(url)
-  #   time.sleep(5)
-  #   radio.stop()
-  #   time.sleep(5)
+    server.server_close()
+    print('Stopped server')
